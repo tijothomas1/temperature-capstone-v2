@@ -1,0 +1,10 @@
+<h1>Add a new measurement</h1>
+
+<%= form_tag '/measurements', method: :post do %>
+  <div>
+    <%= label_tag :reading %>
+    <%= text_field_tag :reading %>
+  </div>
+
+  <%= submit_tag "Submit recipe" %>
+<% end %>

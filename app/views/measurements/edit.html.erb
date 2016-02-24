@@ -1,0 +1,10 @@
+<h1>Update your Measurement</h1>
+
+<%= form_tag "/measurements/#{@measurement.id}", method: :patch do %>
+  <div>
+    <%= label_tag :reading %>
+    <%= text_field_tag :reading %>
+  </div>
+
+  <%= submit_tag "Update Measurement" %>
+<% end %>
